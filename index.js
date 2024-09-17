@@ -1,3 +1,5 @@
+const prompt  = require('prompt-sync');
+const entrada = prompt();
 const nomeCompleto = "Carlos Magno Pereira";
 const anoNascimento = 2006;
 let anoAtual = 2024;
@@ -33,7 +35,8 @@ console.log(ListaDeLocais);
 ListaDeLocais.splice(1,2);
 console.log(ListaDeLocais);
 
-const idadeComprador = 26; 
+var nomeComprador = entrada("Qual nome esta escrito em teu RG? ablublé")
+var idadeComprador = entrada("Qual sua idade?"); 
 
 if(idadeComprador <= 18){
   console.log("Não.")
