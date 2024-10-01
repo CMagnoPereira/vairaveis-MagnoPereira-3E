@@ -18,18 +18,36 @@ console.log(anoAtual);
 
 console.log(`crase ${nomeCompleto}, estamos no ano ${anoAtual} e nasci no ano ${anoNascimento} ${E} tamo ae cara, tenho ${idade} `);
 
+const loginCerto = "cmp";
+const senhaCerta = 2143
+console.log("-------------------");
+console.log("AGENCIA DE VIRGENS");
+console.log("-------------------");
+console.log("fassa teu oinguin");
+
+var login = entrada("colouque teu oinguin: ");
+var login = entrada("senha: ");
+while(login != loginCerto){
+  console.log("oinguin eraudo");
+  login = entrada("tente navamente amigo: ");  
+}
+while(login != senhaCerta){
+  console.log("seunha elada, tentau agien");
+  login = entrada("tente migo denovo: ")
+}
+
 const ListaDeLocais = new Array(
   `Negrozaque`,
   ` Niggeria`,
-  ` IceLandQueNaoTemIce`,
-  ` GreemLandQueNaoTemGreem`,
+  ` IceLand Que Nao Tem Ice`,
+  ` GreemLand Que Nao Tem Greem`,
   ` Italiland`
   );
 
 console.log(ListaDeLocais);
 
 console.log(ListaDeLocais[4]);
-ListaDeLocais. push("Coronel Desvivido");
+ListaDeLocais. push(" Coronel Desvivido.");
 console.log(ListaDeLocais);
 
 ListaDeLocais.splice(1,2);
@@ -40,12 +58,13 @@ var idadeComprador = entrada("Qual sua idade?  ");
 
 if(idadeComprador <= 18){
   
-  console.log(`ola, ${nomeComprador} sua voce não possuia a idade minima ;para fazer essa compra. Apenas ${idadeComprador} anos de idade? patetico`)
+  console.log(`ola, ${nomeComprador} sua voce não possuia a idade minima para fazer essa compra. Apenas ${idadeComprador} anos de idade? patetico, nem tem pelo no saco ainda`)
 }
 if (idadeComprador >= 18){
-  console.log(`senhor(a) ${nomeComprador} seu dinheiro foi enviado com segunrança para o nosso bolso, agradeço sua compra`);
 
  console.log(`Essas são nossa lista de locais para voce levar a sogra
  
  ${ListaDeLocais}`)
+
+
 }
