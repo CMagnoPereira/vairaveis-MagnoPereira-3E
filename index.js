@@ -20,21 +20,30 @@ console.log(`crase ${nomeCompleto}, estamos no ano ${anoAtual} e nasci no ano ${
 
 const loginCerto = "cmp";
 const senhaCerta = 2143
-console.log("-------------------");
-console.log("AGENCIA DE VIRGENS");
-console.log("-------------------");
-console.log("fassa teu oinguin");
+console.log("                                     -------------------");
+console.log("                                     AGENCIA DE VIAGENS");
+console.log("                                     -------------------");
 
-var login = entrada("colouque teu oinguin: ");
-var login = entrada("senha: ");
+var nomeComprador = entrada("Qual seu nome?: ")
+var idadeComprador = entrada("Qual sua idade?:  "); 
+
+if(idadeComprador <= 18){
+
+  console.log(`ola, ${nomeComprador} voce não possuie a idade minima para fazer essa compra. `)
+}
+
+var login = entrada("fassa teu login: ");
+var senha = entrada("senha: ");
 while(login != loginCerto){
-  console.log("oinguin eraudo");
-  login = entrada("tente navamente amigo: ");  
+  console.log("login errado");
+  login = entrada("tente novamente amigo: ");  
 }
-while(login != senhaCerta){
-  console.log("seunha elada, tentau agien");
-  login = entrada("tente migo denovo: ")
+while(senha != senhaCerta){
+  console.log("senha errada, tente novamente");
+  senha = entrada("tente novamente:   ")
 }
+
+console.log(`Essas são as nossas opções para levar a sogra de ferias!`);
 
 const ListaDeLocais = new Array(
   `Negrozaque`,
@@ -46,25 +55,7 @@ const ListaDeLocais = new Array(
 
 console.log(ListaDeLocais);
 
-console.log(ListaDeLocais[4]);
-ListaDeLocais. push(" Coronel Desvivido.");
-console.log(ListaDeLocais);
 
-ListaDeLocais.splice(1,2);
-console.log(ListaDeLocais);
 
-var nomeComprador = entrada("Qual nome esta escrito em teu RG? ")
-var idadeComprador = entrada("Qual sua idade?  "); 
-
-if(idadeComprador <= 18){
-  
-  console.log(`ola, ${nomeComprador} sua voce não possuia a idade minima para fazer essa compra. Apenas ${idadeComprador} anos de idade? patetico, nem tem pelo no saco ainda`)
-}
 if (idadeComprador >= 18){
-
- console.log(`Essas são nossa lista de locais para voce levar a sogra
- 
- ${ListaDeLocais}`)
-
-
 }
